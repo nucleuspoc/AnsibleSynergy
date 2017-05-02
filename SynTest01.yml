@@ -11,4 +11,4 @@
       oneview_storage_volume_template_facts:
         config: "{{ config }}"
       delegate_to: localhost
-  - debug: var=storage_volume_templates
+#- debug: var=storage_volume_templates
