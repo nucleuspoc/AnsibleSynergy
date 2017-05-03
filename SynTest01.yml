@@ -7,8 +7,8 @@
   vars:
     - config: "/opt/variables/oneview_config.json"    
   tasks:
-     - name: Creates directory
-       file: path=/tmp/www1 state=directory mode=0775
+#     - name: Creates directory
+#       file: path=/tmp/www1 state=directory mode=0775
      - name: Create a Server Profile with connections
        oneview_server_profile:
          config: "{{ config }}"
