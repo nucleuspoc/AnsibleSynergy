@@ -11,8 +11,6 @@
     PYTHONPATH: "/usr/lib/python2.7/site-packages/hpOneView/oneview-ansible/library"
   
   tasks:
-#     - name: Creates directory
-#       file: path=/tmp/www1 state=directory mode=0775
     - name: Gather facts about all Connection Templates
       oneview_connection_template_facts:
         config: "{{ config }}"
