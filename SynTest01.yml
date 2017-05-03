@@ -13,16 +13,8 @@
   tasks:
 #     - name: Creates directory
 #       file: path=/tmp/www1 state=directory mode=0775
-     - name: Create a Server Profile with connections
-       oneview_server_profile:
-         config: "{{ config }}"
-         data:
-           name: server-profile-with-connections
-           connections:
-             - id: 1
-               name: connection1
-               functionType: Ethernet
-               portId: Auto
-               requestedMbps: 2500
-               networkName: eth-demo
-#     delegate_to: localhost
+    - name: Gather facts about all Connection Templates
+      oneview_connection_template_facts:
+        config: "{{ config }}"
+      delegate_to: localhost
+
