@@ -16,7 +16,7 @@
        oneview_server_profile:
          config: "{{ config }}"
          data:
-           name: "server-profile-with-connections"
+           name: server-profile-with-connections
            connections:
              - id: 1
                name: connection1
