@@ -7,8 +7,10 @@
   vars:
     - config: "/opt/variables/oneview_config.json"    
   tasks:
-    - name: Gather facts about all Storage Volume Templates
-      oneview_storage_volume_template_facts:
-        config: "{{ config }}"
-      delegate_to: localhost
-    - debug: var=storage_volume_templates
+     - name: Creates directory
+       file: path=/tmp/www state=directory owner=root mode=0775
+#    - name: Gather facts about all Storage Volume Templates
+#      oneview_storage_volume_template_facts:
+#        config: "{{ config }}"
+#      delegate_to: localhost
+#    - debug: var=storage_volume_templates
