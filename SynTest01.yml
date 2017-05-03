@@ -7,6 +7,7 @@
   vars:
     - config: "/opt/variables/oneview_config.json"  
   environment:
+    ANSIBLE_LIBRARY: "/usr/lib/python2.7/site-packages/hpOneView/oneview-ansible/library"
     PYTHONPATH: "/usr/lib/python2.7/site-packages/hpOneView/oneview-ansible/library"
   
   tasks:
