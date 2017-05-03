@@ -21,4 +21,4 @@
                portId: Auto
                requestedMbps: 2500
                networkName: eth-demo
-     delegate_to: localhost
+#     delegate_to: localhost
