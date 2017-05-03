@@ -5,7 +5,10 @@
   user: remote
 
   vars:
-    - config: "/opt/variables/oneview_config.json"    
+    - config: "/opt/variables/oneview_config.json"  
+  environment:
+    PYTHONPATH: "/usr/lib/python2.7/site-packages/hpOneView/oneview-ansible/library"
+  
   tasks:
 #     - name: Creates directory
 #       file: path=/tmp/www1 state=directory mode=0775
